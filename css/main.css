@@ -91,7 +91,7 @@ textarea {
    ========================================================================== */
 
 html {
-    background-color: #fff;
+    background-color: #1E130C;
     height: 100%;
 }
 
@@ -102,44 +102,99 @@ body {
     height: 100%;
 }
 
+header, footer {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    color: #F7AD4A;
+}
+
+header {
+    border-bottom: 1px solid #F7AD4A;
+}
+
+h1 {
+    font-family: 'Alice', serif;
+    font-size: 3em;
+}
+
+main {
+    padding: 40px;
+    color: #F7AD4A;
+    line-height: 1.5em;
+    font-size: 1.25em;
+    display: flex;
+    align-items: center;
+}
+
+span {
+    font-weight: 700;
+}
+
 .wrapper {
     font-weight: 400;
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
 }
 
 .bubble {
     padding: 40px;
     color: #1E130C;
-    line-height: 1.4em;
+    line-height: 1.25em;
     font-size: 1em;
-    background-color: #f16059;
-    /*height: 250px;*/
     display: flex;
-    width: 25%;
-    justify-content: center;
-    align-items: center;
+    margin: 10px;
+    flex: 1 25%;
     flex-flow: column nowrap;
+    align-items: center;
     border-radius: 25px;
+}
+
+.bubble i {
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+.bubble p {
+    text-align: center;
 }
 
 .bubble p span {
     font-weight: 400;
-    /*font-family: 'Alice', serif;*/
 }
 
 #intro-bubble {
-    /*background: #F7AD4A;*/
-    background: rgba(247, 181, 102, 0.7);
-}
-
-#tech-bubble {
-    /*background: #57623D;*/
-    background: rgba(87, 98, 61, 0.7);
+    background: #57623D;
+    
+    /*background: rgba(247, 181, 102, 0.7);*/
 }
 
 #academic-bubble {
-    background: rgba(242, 103, 22, 0.7);
+    background: #F7AD4A;
+    /*background: rgba(87, 98, 61, 0.7);*/
+}
+
+#diy-bubble {
+    background: #F26716;
+    /*background: rgba(242, 103, 22, 0.7);*/
+}
+
+footer {
+    font-size: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+footer i {
+    font-size: 3em;
+}
+
+footer a {
+    padding: 10px;
+    color: #F7AD4A;
 }
 
 /* ==========================================================================
